@@ -13,4 +13,22 @@
         android:text="Map"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_map"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_map"
+        android:layout_marginBottom="20dp"/>
 </RelativeLayout>
