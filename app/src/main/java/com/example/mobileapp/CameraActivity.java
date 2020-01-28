@@ -69,7 +69,7 @@ public class CameraActivity extends AppCompatActivity {
             if (photoFile != null)
             {
                 pathToFile = photoFile.getAbsolutePath();
-                Uri photoUri = FileProvider.getUriForFile(CameraActivity.this,"com.example.android.fileprovider", photoFile);
+                Uri photoUri = FileProvider.getUriForFile(this,"com.example.android.fileprovider", photoFile);
                 takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
                 startActivityForResult(takePic, 1);
             }

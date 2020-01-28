@@ -33,6 +33,19 @@ public class MainActivity extends AppCompatActivity {
                 openActivityCamera();
             }
         });
+
+        button_calc = (Button) findViewById(R.id.button_calc);
+        button_calc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityCalc();
+            }
+        });
+    }
+
+    private void openActivityCalc() {
+        Intent intent = new Intent(this, CalcActivity.class);
+        startActivity(intent);
     }
 
     private void openActivityMap() {
