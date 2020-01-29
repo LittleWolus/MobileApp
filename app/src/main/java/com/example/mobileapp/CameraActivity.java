@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -69,7 +70,7 @@ public class CameraActivity extends AppCompatActivity {
             if (photoFile != null)
             {
                 pathToFile = photoFile.getAbsolutePath();
-                Uri photoUri = FileProvider.getUriForFile(this,"com.example.android.fileprovider", photoFile);
+                Uri photoUri = FileProvider.getUriForFile(CameraActivity.this,"com.example.mobileapp.fileprovider", photoFile);
                 takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
                 startActivityForResult(takePic, 1);
             }

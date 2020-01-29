@@ -63,6 +63,11 @@ public class CalcActivity extends AppCompatActivity {
                 result_num = num1/num2;
                 result.setText(String.valueOf(result_num));
                 }
+                else
+                {
+                    result.setText("Error:Zero division!");
+                }
+
             }
         });
 
